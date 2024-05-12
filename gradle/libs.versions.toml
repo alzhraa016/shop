@@ -1,0 +1,37 @@
+[versions]
+agp = "8.4.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+googleServices = "4.4.1"
+firebaseBom = "32.8.1"
+glide = "4.16.0"
+viewpager2 = "1.0.0"
+dotsindicator = "5.0"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+firebaseBom = { group = "com.google.firebase", name ="firebase-bom", version.ref = "firebaseBom"}
+analytics = { group = "com.google.firebase", name = "firebase-analytics" }
+firbaseAuth = { group = "com.google.firebase", name = "firebase-auth"}
+firestore = { group = "com.google.firebase", name ="firebase-firestore" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref ="viewpager2" }
+dotsindicator = { group = "com.tbuonomo", name = "dotsindicator", version.ref = "dotsindicator" }
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+googleServices = { id = "com.google.gms.google-services", version.ref =  "googleServices" }
+
+

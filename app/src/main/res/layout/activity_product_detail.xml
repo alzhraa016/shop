@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Product Details"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/titleTv"/>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTextView"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTextView"
+        android:padding="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/addToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:layout_above="@id/viewCart"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/viewCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Cart"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
